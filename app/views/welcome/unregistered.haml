@@ -6,4 +6,65 @@
 				%strong
 					Ofrece tus productos digitales a tu audiencia
 		.col-md-5.inline-block
-			=image_tag "mono.png"
+			=image_tag "mono.png", widht:"120"
+
+.grey.white-text.big-padding.kostic
+
+	.col-md-10.no-float.center-block
+		
+		.absoulte.red{style:"bottom:-4.5empx; width:100%; left:0px;"}
+			.text-center.big
+				.col-md-3.inline-block
+					.white.grey-text.circle
+						%strong 1 
+
+
+		%h2.bigger.kostic.text-center
+			%strong Tiendus en 3 pasos
+		%div.text-center
+			.col-md-3.inline-block.text-left
+				=image_tag "upload-icon.png" 
+				.top-space
+					%strong.medium
+						Sube tus Archivos
+					%p.white-text.text-justify.small
+						!Libro digita, canción, comic, curso lo que se te ocurra, Si lo puedes meter en un .zip lo puedes vender.
+			.col-md-3.inline-block.text-left
+				=image_tag "youtube-icon.png" 
+				.top-space
+					%strong.medium
+						Sube tus Archivos
+					%p.white-text.text-justify.small
+						!Libro digita, canción, comic, curso lo que se te ocurra, Si lo puedes meter en un .zip lo puedes vender.
+
+			.col-md-3.inline-block.text-left
+				=image_tag "money-icon.png" 
+				.top-space
+					%strong.medium
+						Sube tus Archivos
+					%p.white-text.text-justify.small
+						!Libro digita, canción, comic, curso lo que se te ocurra, Si lo puedes meter en un .zip lo puedes vender.
+
+.red.white-text.big-padding.kostic{style:"margin-top:5m;"}
+	%div.col-md-8.no-float.text-center.cente-block
+		=image_tag "media_icons.png"
+		%p.medium.col-md-11.center-block.no-float.top-space
+			%strong
+				Vende tus libros electronicos, panes y todo eso
+
+.top-space.big-padding
+	.col-md-10.col-xs-12.center-block.no-float
+		=form_tag ("/", method: :post) do
+			=email_field_tag "email", nil
+
+
+
+
+
+
+
+
+
+
+
+

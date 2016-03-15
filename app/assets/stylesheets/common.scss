@@ -6,7 +6,7 @@
 
 $green: #16a085;
 $grey: #5a6576;
-$other-grey: e7ecee;
+$other-grey: #e7ecee;
 $blue: #058cc5;
 $red: #d2527f;
 $light-blue: #3498bd;
@@ -77,11 +77,11 @@ $light-blue: #3498bd;
 }
 
 .no-float { 
-	float: none!important; 
+	float: none !important; 
 }
 
 inline-block{ 
-	float: none!important; 
+	float: none !important; 
 	display: inline-block;
 	vertical-align: middle; 
 }
@@ -90,10 +90,25 @@ inline-block{
 	font-size:6em;
 }
 
+.bigger{
+	font-size:4em;
+}
 
+.top-space{
+	margin-top:1em;
+}
 
+.medium{
+	font-size:1.5em;
+}
 
+.small{
+	font-size:20px;
+}
 
+.absolute{
+	position:absolute;
+}
 
 
 
