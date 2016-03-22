@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 	#root 'welcome#index'
   	devise_for :users
   	
-    post "/emails/create", as: :create_email_path
+    post "/emails/create", as: :create_email
 
   	authenticated :user do
   		root 'welcome#index'

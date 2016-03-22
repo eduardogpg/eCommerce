@@ -47,17 +47,16 @@
 
 .red.white-text.big-padding.kostic{style:"margin-top:5m;"}
 	%div.col-md-8.no-float.text-center.cente-block
-		=image_tag "media_icons.png"
+		=image_tag "media-icons.png"
 		%p.medium.col-md-11.center-block.no-float.top-space
 			%strong
-				Vende tus libros electronicos, panes y todo eso
+				Vende tus libros electronicos, tutoriales, canciones, comics, pnatillas, fotografias de stock, archivos fuente, cualquier prodcto digital.
 
-.top-space.big-padding
+.top-space.big-padding.bottom_space
 	.col-md-11.col-xs-12.center-block.no-float
-		=form_tag ("/", method: :post) do
-			=email_field_tag "email", nil, class:"col-xs-12 inline-block text-center": 
-			
-
+		=form_tag(create_email_path,method: :post, remote:true, id: "emails-Form" ) do
+			=email_field_tag "email", nil, class:"col-xs-12 inline-block text-center landing-form", placeholder: "Escribe tu email aqui" 
+		#email-info.red.white-text.large-paddin
 
 
 
