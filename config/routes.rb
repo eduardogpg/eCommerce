@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :products
 	#root 'welcome#index'
   	devise_for :users
   	
+    post "/emails/create", as: :create_email_path
+
   	authenticated :user do
   		root 'welcome#index'
   	end
